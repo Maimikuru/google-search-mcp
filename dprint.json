@@ -1,0 +1,37 @@
+{
+  "$schema": "https://dprint.dev/schemas/v0.json",
+  "projectType": "open",
+  "incremental": true,
+  "typescript": {
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "useTabs": false,
+    "semiColons": "asi",
+    "quoteStyle": "preferSingle",
+    "newLineKind": "lf",
+    "useBraces": "whenNotSingleLine",
+    "bracePosition": "sameLineUnlessHanging",
+    "singleBodyPosition": "maintain",
+    "nextControlFlowPosition": "nextLine",
+    "trailingCommas": "onlyMultiLine",
+    "operatorPosition": "nextLine",
+    "preferHanging": false,
+    "preferSingleLine": false,
+    "arrowFunction.useParentheses": "preferNone"
+  },
+  "json": {
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "useTabs": false,
+    "newLineKind": "lf"
+  },
+  "markdown": {
+    "lineWidth": 80
+  },
+  "excludes": ["**/node_modules", "**/dist", "**/.git", "**/target"],
+  "plugins": [
+    "https://plugins.dprint.dev/typescript-0.93.0.wasm",
+    "https://plugins.dprint.dev/json-0.19.3.wasm",
+    "https://plugins.dprint.dev/markdown-0.17.8.wasm"
+  ]
+}
